@@ -20,7 +20,7 @@ const open__menu = () => {
 const close__menu = () => {
 	closeMenu.style.display = "none";
 	openMenu.style.display = "block";
-	menu.style.top = "-360px";
+	menu.style.top = "-340px";
 }
 
 //____Support___
