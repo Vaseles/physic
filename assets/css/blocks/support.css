@@ -1,0 +1,133 @@
+.support {
+	background-color: #202020;
+	width: 500px;
+	min-height: 360px;
+	height: auto;
+	position: fixed;
+	z-index: 20;
+	top:20%;
+	right: 34%;
+	left: 34%;
+	border: 1px solid aliceblue;
+	display: none;
+}
+.support__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 0;
+	position: relative;
+}
+.suport__close {
+	position: absolute;
+	right: 20px;
+}
+.close {
+	transition: color .5s linear;
+}
+.close:hover {
+	color: red;
+	cursor: pointer;
+}
+.support__inner {
+	padding: 10px 0;
+}
+.support__name {
+	text-align: center;
+	padding: 3px 0;
+}
+.support__input {
+	background-color: transparent;
+	color: aliceblue;
+	font-size: 20px;
+	padding: 5px 2px;
+	border: none;
+	outline: none;
+}
+.suppor__area {
+	background-color: transparent;
+	outline: none;
+	resize: both;
+	font-size: 22px;
+	padding: 3px;
+	width: 400px;
+	height: 30px;
+	color: aliceblue;
+}
+.suppor__area  {
+	border: none;
+}
+.support__button {
+	padding: 4px 30px;
+	font-size: 20px;
+	text-transform: uppercase;
+	display: block;
+	background-color: transparent;
+	border: 1px solid aliceblue;
+	color: aliceblue;
+	box-shadow: 4px 4px 10px black;
+	transition: box-shadow .4s linear, border .4s linear, background-color .4s linear, color .4s linear;
+}
+.suppor__area:focus + .support__line::before  {
+	width: 100%;
+}
+.support__input:focus + .support__line::before  {
+	width: 100%;
+}
+.support__button:hover {
+	color: aliceblue;
+	background-color: 	#191970;
+	border: none;
+	box-shadow: 7px 7px 10px black;
+}
+
+.support__line {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	
+	background-color: aliceblue;
+	position: relative;
+	transition: width .5s linear;
+	top: -6px;
+}
+.support__line::before {
+	content: "";
+	display: block;
+	width: 0%;
+	height: 1px;
+	
+	background-color: 	#4169E1;
+	position: relative;
+	transition: width .5s linear;
+	top: 0px;
+}
+@media screen and (max-width: 600px) {
+	.support__button {
+		margin-top: 10px;
+		padding: 6px 10px;
+		font-size: 18px;
+	}
+	.support {
+		background-color: #202020;
+		width: 100%;
+		min-height: 360px;
+		z-index: 20;
+		top:20%;
+		
+		left: 0;
+		border: 1px solid aliceblue;
+		display: none;
+	}
+	.suppor__area {
+		background-color: transparent;
+		outline: none;
+		resize: both;
+		font-size: 20px;
+		padding: 3px;
+		width: 100%;
+		height: 32px;
+		color: aliceblue;
+	}
+}

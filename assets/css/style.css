@@ -1,0 +1,32 @@
+@import "blocks/header.css";
+@import "blocks/intro.css";
+@import "blocks/themes.css";
+@import "blocks/footer.css" ;
+@import "blocks/support.css";
+@import "blocks/article.css";
+@import "blocks/post.css";
+@import "blocks/interesting.css";
+@import "blocks/task.css";
+
+body {
+	color: aliceblue;
+	background-color: #202020;
+	font-size: 24px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	opacity: 1;
+	width: 100%;
+}
+li {
+	list-style-type: none;
+}
+
+.md-48 {
+	font-size: 30px !important;
+}
+* {
+	box-sizing: border-box;
+}

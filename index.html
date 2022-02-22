@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Главная</title>
+	<!--CSS-->
+	<link rel ="stylesheet" href="assets/css/style.css">
+	<link rel ="stylesheet" href="assets/css/blocks/header.css">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Ruslan+Display&display=swap" rel="stylesheet">
+	<!--icon-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Useful meta tags -->
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<meta name="google" content="notranslate">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+</head>
+<body id = "body">
+	
+	<header class = "header" >
+		<div class = "header__log">
+			<div class= "header__logotip header__spechial"><img src = "assets/img/physics.png" class></div>
+			<a href="index.html" class= " header-name">Физика</a>
+		</div>
+		<div class = "header__menu">
+			<div class = "header__inside" id = "menu">
+				<a class = "header__button" href = "lection.html">Лекции</a>
+				<a  class = "header__button"href = "#">Лабораторные работы</a>
+				<a  class = "header__button"href = "practice.html">Практические работы</a>
+				<a  class = "header__button"href = "exem.html">Экзаменационный материал</a>
+				<a class = "header__button" href = "#" >Формулы</a>
+			</div>
+			
+			<div class  = "header__mob">
+				<div class = "header__open" id = "openMenu"  onclick="open__menu()"><span class="material-icons  md-48 menu pinki" >menu</span></div>
+				<div class = "header__close" onclick="close__menu()" id = "closeMenu">
+					<span class="material-icons  md-48 menu pinki" >close</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class = "intro">
+		<img class = "intro__image" src = "assets/img/intro%20(1).jpg">
+		<div class = "intro__rel">
+			<div class = "intro__title">Поиск по темам</div>
+			<div class = "intro__sea">
+				<input class = "intro__input" placeholder="введите текст" type="text">
+				<button class = "intro__clear">
+					<span class="material-icons  md-48 menu" >close</span>
+				</button>
+				<button class = "intro__searh">
+					<span class="material-icons  md-48 menu" >search</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "themes">
+		
+		<figure class  = "block blue">
+			<img src = "https://images.pexels.com/photos/239419/pexels-photo-239419.jpeg?cs=srgb&dl=pexels-markus-spiske-239419.jpg&fm=jpg" class = "block__img">
+				<figcaption class = "block__item">
+					<div class = "block__text">Механика</div>
+				</figcaption>
+				<a href = "#" class = "block__link"></a>
+		</figure>
+		
+		<figure class  = "block black special">
+			<img src = "https://images.pexels.com/photos/10670941/pexels-photo-10670941.jpeg?cs=srgb&dl=pexels-rafael-classen-rcphotostockcom-10670941.jpg&fm=jpg" class = "block__img">
+				<figcaption class = "block__item">
+					<div class = "block__text">Молекулярная физика</div>
+				</figcaption>
+				<a href = "#" class = "block__link"></a>
+		</figure>
+		<figure class  = "block yellow special">
+			<img src = "https://images.pexels.com/photos/401107/pexels-photo-401107.jpeg?cs=srgb&dl=pexels-saya-kimura-401107.jpg&fm=jpg" class = "block__img">
+				<figcaption class = "block__item">
+					<div class = "block__text">Электричество</div>
+				</figcaption>
+				<a href = "#" class = "block__link"></a>
+		</figure>
+		<figure class  = "block pink special">
+			<img src = "https://cdn.pixabay.com/photo/2016/02/25/17/31/atom-1222512_960_720.jpg" class = "block__img">
+				<figcaption class = "block__item">
+					<div class = "block__text">Атомная физика</div>
+				</figcaption>
+				<a href = "#" class = "block__link"></a>
+		</figure>
+		
+		<figure class  = "block red special">
+			<img src = "https://cdn.pixabay.com/photo/2016/02/25/17/31/atom-1222511_960_720.jpg" class = "block__img">
+				<figcaption class = "block__item">
+					<div class = "block__text">Ядерная физика</div>
+				</figcaption>
+				<a href = "#" class = "block__link"></a>
+		</figure>
+		
+
+		
+	</div>
+	
+	
+	<footer class = "footer">
+		<div class = "footer__item">
+			<div class = "header__log">
+			<div class= "header__logotip"><img src = "assets/img/physics.png" class></div>
+			<div class= "header__name">Физика</div>
+		</div>
+		</div>
+		<div class = "footer__item">
+			<div class = "footer__name footer_i">Vaseles</div>
+			<div class = "footer__email footer__i" type = "email">vaselesstolarov813@gmail.com</div>
+		</div>
+		<div class = "footer__item">
+			<a href = "#" class = "footer__link">FAQ</a>
+			<div class = "footer__link" onclick="openSupport()" id = "support" >support</div>
+		</div>
+	</footer>
+	<div class = "support" id = "supportWindow">
+		
+				<form action="/" method="post" class = "support__item">
+					<div class = "suport__close">
+						<span class="material-icons  md-48 close" id = 'closeWindow' onclick = "close__window()">close</span>
+					</div>
+					<div class = "support__inner">
+						<div class = "support__name">Ваше имя</div>
+						<input class = "support__input" type = "text">
+						<span class = "support__line"></span>
+					</div>
+				
+				<div class = "support__inner">
+					<div class = "support__name">E-mail</div>
+					<input class = "support__input" type="email">
+					<span class = "support__line"></span>
+				</div>
+					
+				<div class = "support__inner">
+					<div class = "support__name">Ваша проблема</div>
+					<textarea class  = "suppor__area  support__area--textarea" name = "comment" placeholder="Your problem..." data-autoresize></textarea>
+						<span class = "support__line"></span>
+				</div>
+				<button class = "support__button" type="submit">send</button>
+			</form>
+			</div>
+	
+	<!--JS-->
+	<script src = "assets/script/script.js"></script>
+	
+</body>
+</html>
