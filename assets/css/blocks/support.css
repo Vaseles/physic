@@ -5,11 +5,12 @@
 	height: auto;
 	position: fixed;
 	z-index: 20;
-	top:20%;
+	bottom:20%;
 	right: 34%;
 	left: 34%;
 	border: 1px solid aliceblue;
-	display: none;
+	opacity: 0;
+	transition: opacity .4s linear;
 }
 .support__item {
 	display: flex;
@@ -114,8 +115,7 @@
 		width: 100%;
 		min-height: 360px;
 		z-index: 20;
-		top:20%;
-		
+		bottom:100px;
 		left: 0;
 		border: 1px solid aliceblue;
 		display: none;
