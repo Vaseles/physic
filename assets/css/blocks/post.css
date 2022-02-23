@@ -59,7 +59,7 @@
 .post__bold {
 	font-weight: bold;
 }
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 700px)  {
 	.page {
 		width: 100%;
 		position: relative;
@@ -97,5 +97,10 @@
 	.post__p {
 		line-height: 1.2;
 		font-size: 22px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.post {
+		font-size: 18px;
 	}
 }
