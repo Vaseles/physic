@@ -37,7 +37,7 @@
 	justify-content: center;
 }
 .intro__input {
-	max-width: 400px;
+	max-width: 500px;
 	background-color: #202020;
 	height: 40px;
 	color: aliceblue;
@@ -46,7 +46,8 @@
 	border: none;
 	font-size: 20px;
 	padding: 0 10px;
-	outline: none;
+	width: 100%;
+	
 }
 .intro__clear {
 	width: 50px;
