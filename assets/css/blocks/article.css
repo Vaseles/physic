@@ -22,6 +22,15 @@
 	box-shadow: 10px 10px 10px black;
 	margin-bottom: 20px;
 }
+.article:hover .article__name{
+	color: #FFD700;
+	opacity: 1;
+}
+.article:hover {
+	border :2px solid #FFD700;
+	transform: scale(1.05);
+	cursor: pointer;
+}
 .article__name {
 	color: aliceblue;
 	text-decoration: none;
@@ -29,6 +38,7 @@
 }
 .article__name  {
 	font-size: 28px;
+	font-weight: 400;
 }
 .article__description {
 	padding: 10px 0 0;
@@ -45,10 +55,6 @@
 	opacity: .6;
 	font-size: 18px;
 }
-.article__name:hover {
-	color: #483D8B;
-	opacity: 1;
-	}
 .article a:hover {
 	opacity: .8;
 }
@@ -56,7 +62,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	
+}
+.article__name:hover {
+	opacity: 1;
+	color: #FFD700;
 }
 
 @media screen and (max-width: 600px) {

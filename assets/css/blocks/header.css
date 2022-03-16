@@ -56,8 +56,11 @@
 	font-size: 20px;
 }
 .header__button:hover{
-	background-color: 	#191970;
+	background-color: #FFD700;
 	opacity: 1;
+	color: #202020;
+	font-weight: 600;
+    margin: 0;
 	box-shadow: 5px 5px 5px #202020;
 }
 .header__mob {
